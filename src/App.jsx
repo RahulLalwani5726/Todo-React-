@@ -29,7 +29,7 @@ function App() {
 
   function Redner(){
     const TodosData = (JSON.parse(localStorage.getItem("Todos")));
-    if(TodosData.length > 0 && TodosData){
+    if(TodosData && TodosData.length > 0){
       setTodos(TodosData);
     }
   }
